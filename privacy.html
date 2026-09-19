@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How Worthward and Plowden Digital handle work records, purchases, diagnostics, backups and privacy requests.">
+  <meta name="theme-color" content="#101820">
+  <title>Worthward Privacy Policy | Plowden Digital</title>
+  <link rel="icon" href="assets/worthward.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="index.html" aria-label="Worthward home"><img src="assets/worthward.svg" width="52" height="52" alt=""><span>Worthward<small>By Plowden Digital</small></span></a>
+    <nav aria-label="Main navigation"><a href="index.html#support">Support</a><a href="privacy.html" aria-current="page">Privacy</a></nav>
+  </header>
+  <main id="main" class="wrap policy">
+    <p class="eyebrow">PLOWDEN DIGITAL</p>
+    <h1>Worthward Privacy Policy</h1>
+    <p class="date">Policy version: September 19, 2026</p>
+    <p>Worthward is an Android app provided by Plowden Digital. This policy explains how we handle information when you record work, calculate estimated pay, review paychecks, use Pro features, visit this website or contact us.</p>
+    <p>For support or privacy requests, email <a href="mailto:plowdendigital.apps@gmail.com">plowdendigital.apps@gmail.com</a>.</p>
+    <div class="summary"><p>Your work and pay records are stored in the app on your device. Online services support purchase verification and app security. Android backups, files you export, SDK diagnostics and messages you send us have separate data-handling practices explained below.</p></div>
+    <nav class="policy-nav" aria-label="Privacy policy sections"><a href="#records">Your records</a><a href="#purchases">Purchases</a><a href="#retention">Retention and deletion</a><a href="#website">This website</a></nav>
+
+    <section id="records"><h2>1. Your work and pay records</h2>
+      <p>Worthward stores the information you enter for its work and pay tools in local app storage. This can include workplace names, job titles, rates, pay rules, schedules, shifts, leave choices, notes, earnings estimates, forecast snapshots and paycheck-check information.</p>
+      <p>The app uses these records to provide the calculations and features you choose. Recording a shift or calculating an estimate does not upload your work-history database to Plowden Digital. You do not create a separate Worthward account to use the app. Google Play uses your Google account for purchases and distribution.</p>
+    </section>
+
+    <section><h2>2. Backups and exported files</h2>
+      <p>Android backup and device-transfer features may copy eligible Worthward data according to your device and account settings. These system-managed copies are separate from Worthward’s manual backup feature and are handled by your device’s backup provider.</p>
+      <p>When you export a CSV or create a Worthward backup, you select a destination using Android’s file picker. That destination can be on your device or with a cloud storage provider. Worthward does not add its own encryption to exported CSV or JSON files. Keep them somewhere you trust.</p>
+      <p>Deleting information from Worthward does not delete files you previously exported, system backups, or copies you shared with other people. Manage those copies separately through the relevant storage provider or recipient.</p>
+    </section>
+
+    <section><h2>3. Reading pay-stub documents</h2>
+      <p>If you select a pay-stub image or PDF, Worthward uses Google ML Kit to recognize text on your device. This recognition process does not send the document contents or recognized text to Google servers. You review the extracted information before saving supported paycheck details in Worthward.</p>
+      <p>ML Kit separately sends technical diagnostics and usage metrics to Google. These can include device and app details, per-installation identifiers, processing times, feature configuration, input/output sizes, feature events and error codes. They help Google operate, diagnose and improve the SDK. They are distinct from the contents of your pay stub.</p>
+      <p>See <a href="https://developers.google.com/ml-kit/terms">ML Kit’s privacy information</a> and <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.</p>
+    </section>
+
+    <section id="purchases"><h2>4. Purchases and app security</h2>
+      <p>Google Play processes Pro purchases. Worthward sends the product identifier, purchase token and Google Play Integrity proof to our verification service over HTTPS. Our service uses Google Play to check purchase status, acknowledge eligible purchases and verify that requests come from an eligible installation. Worthward does not collect payment-card details through its own purchase interface.</p>
+      <p>Google Play also sends purchase-status notifications through Google Cloud Pub/Sub. These messages can contain purchase tokens and status information. Our service processes raw purchase tokens for verification without writing them into its application logs or revocation database.</p>
+      <p>To prevent access using inactive or revoked purchases, our service stores a hashed purchase identifier, an event time and a status reason in Google Cloud Firestore. A hash is still associated with the purchase; it is not anonymous information. A later verification of an active purchase removes the corresponding inactive or revoked record.</p>
+      <p>Google Play Integrity and related Google services process app, device and request information for verification and abuse prevention. Our hosting service also processes network and request metadata, which can include IP addresses, request times, request paths, status codes and technical client information.</p>
+    </section>
+
+    <section><h2>5. Description analysis</h2>
+      <p>Worthward’s local pay-description analysis runs on your device. Hosted AI analysis is currently unavailable. The app can contact Worthward’s service to check feature availability, but this policy does not describe an active hosted AI service.</p>
+      <p>If we enable hosted analysis, we will update this policy and explain the information and provider involved before asking you to use it.</p>
+    </section>
+
+    <section><h2>6. Shift reminders</h2>
+      <p>If you enable reminders and grant notification permission, Worthward uses your shift information to schedule notifications on your device. Notifications may show shift details on your screen, depending on Android’s notification and lock-screen settings. You can change reminders in Worthward and notification permissions in Android.</p>
+    </section>
+
+    <section><h2>7. Support, feedback and diagnostics</h2>
+      <p>If you email us, we receive your email address, your message and any attachments you choose to send. We use this information to respond, investigate issues and improve Worthward.</p>
+      <p>Sharing Worthward’s tester diagnostics is optional. The report includes app and operating-system versions, device model, locale, time zone, installation and entitlement status, settings, check results and record counts. It excludes your actual pay rates, workplace names, shift details, notes, document contents and purchase tokens. Screenshots or other attachments you send separately may contain additional personal information.</p>
+      <p>Worthward does not display third-party advertisements. Technical SDK metrics and server logs still apply as described in this policy.</p>
+    </section>
+
+    <section><h2>8. Services that handle information</h2>
+      <p>We use Google Play for app distribution and purchases, Play Integrity for request verification, Google Cloud for backend hosting and purchase-status processing, ML Kit for on-device text recognition and its technical metrics, and Gmail for support email. GitHub Pages hosts this website. Backup, export and sharing destinations depend on the services you choose.</p>
+      <p>Information is handled for the functions described above and may also be disclosed when required by applicable law or necessary to investigate misuse and protect our services. These providers may process information in countries other than your own. Their privacy policies describe their own practices.</p>
+    </section>
+
+    <section id="retention"><h2>9. Retention and deletion</h2>
+      <ul>
+        <li><strong>Local app records:</strong> remain until removed through available app controls or Android’s app-data controls. Clearing app storage removes local app data and cannot be undone without a backup. System backups and exported copies are managed separately and may restore data later.</li>
+        <li><strong>Routine service logs:</strong> our Google Cloud logging configuration retains these for 30 days.</li>
+        <li><strong>Required cloud audit logs:</strong> Google Cloud retains certain administrative and system audit logs for 400 days. This is separate from routine app-request logging.</li>
+        <li><strong>Purchase notifications:</strong> Pub/Sub is configured for up to seven days of retention for unacknowledged messages. Continued retention of acknowledged messages and additional topic-level retention are not enabled.</li>
+        <li><strong>Purchase-security records:</strong> hashed identifiers and associated status information have no automatic expiry. They are retained to preserve purchase-revocation protections unless cleared by an active-purchase verification or an appropriate reviewed deletion.</li>
+        <li><strong>Support correspondence:</strong> we keep ordinary support emails and attachments for up to 12 months after resolution, deleting sooner on request where possible. Specific records may be retained longer for an ongoing dispute, security investigation or legal obligation.</li>
+      </ul>
+      <p>To ask about or request deletion of information held by Plowden Digital, email <a href="mailto:plowdendigital.apps@gmail.com?subject=Worthward%20privacy%20request">plowdendigital.apps@gmail.com</a>. We may need information to verify and locate the relevant record. We review requests and explain any information we need to retain for security or other applicable obligations. Do not send purchase tokens, passwords or unredacted pay documents in your initial request.</p>
+      <p>We cannot remotely access or delete work records that are held only on your device, or delete records controlled independently by Google Play or another provider. We can help you identify the appropriate local controls or provider.</p>
+    </section>
+
+    <section id="website"><h2>10. This website</h2>
+      <p>This site does not use advertising trackers, analytics scripts, embedded third-party widgets or cookies set by Plowden Digital. GitHub Pages logs visitors’ IP addresses for security, whether or not they are signed in to GitHub. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a> for GitHub’s handling of this information.</p>
+      <p>Following an external link or choosing to email us takes you to another service with its own privacy practices.</p>
+    </section>
+
+    <section><h2>11. Security and updates</h2>
+      <p>Worthward uses HTTPS for its release backend connections. Local records use Android’s app-storage protections; exported files do not receive additional encryption from Worthward. No system can guarantee absolute security.</p>
+      <p>We will update this policy when our practices change and revise the version date shown above. For questions about this policy, contact Plowden Digital at <a href="mailto:plowdendigital.apps@gmail.com">plowdendigital.apps@gmail.com</a>.</p>
+    </section>
+  </main>
+  <footer class="wrap"><span>© 2026 Plowden Digital</span><a href="index.html">Back to Worthward</a></footer>
+</body>
+</html>
