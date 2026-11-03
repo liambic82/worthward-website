@@ -22,7 +22,7 @@ Official instructions: https://docs.github.com/en/pages/getting-started-with-git
 
 ## Publication and maintenance notes
 
-- The home page correctly says the app is in testing. No public Play download is promised.
+- The home page links to the public Google Play listing for `com.mplowden.worthward`. The November 3, 2026 refresh explains verified core features, the optional one-time Pro purchase, and a clearly labeled illustrative gross-pay calculation.
 - The policy includes the owner-approved limit of 12 months after resolution for ordinary support emails. Apply a regular mailbox cleanup process and handle privacy requests through the public support address.
 - Hosted AI is unavailable as checked September 19, 2026. Update the policy before enabling it.
 - Cloud log retention is based on the supplied 30/400-day configuration; unacknowledged purchase messages have seven-day retention. Purchase revocation hashes have no automatic expiry in the reviewed server code.
@@ -30,3 +30,4 @@ Official instructions: https://docs.github.com/en/pages/getting-started-with-git
 - The privacy policy is based on the supplied app/server source, the provided cloud settings and official SDK documentation. It is not a certification that Google Play has accepted the declarations. Data safety, audience and country selections remain separate Play Console tasks.
 - The logo reuses paths from the app's `ic_worthward_foreground.xml`, adapted into SVG. The site has no scripts, forms, external fonts, analytics or tracking cookies. GitHub's hosting logs are disclosed.
 - Do not upload private source archives, audit drafts, credentials or customer records to this website repository.
+
